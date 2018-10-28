@@ -1,19 +1,21 @@
 export interface Tickers {
-  [market: string]: Ticker;
+  [pair: string]: TickerPair;
 }
 
-export interface Ticker {
+export interface TickerPair {
   name: string;
   base_unit: string;
   quote_unit: string;
   at: number;
-  ticker: {
-    buy: string;
-    sell: string;
-    open: string;
-    low: string;
-    high: string;
-    last: string;
-    vol: string;
-  };
+  ticker: Ticker;
+}
+
+export interface Ticker {
+  buy: string;
+  sell: string;
+  open: string;
+  low: string;
+  high: string;
+  last: string;
+  vol: string;
 }
