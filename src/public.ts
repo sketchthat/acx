@@ -1,13 +1,14 @@
 import { Common } from './common';
 
+import { OrderBy } from './interfaces/common/orderBy.type';
+import { Trade } from './interfaces/common/trade.interface';
 import { Depth } from './interfaces/public/depth.interface';
 import { Period } from './interfaces/public/k.interface';
 import { KPending } from './interfaces/public/k_pending.interface';
 import { Market } from './interfaces/public/markets.interface';
+import { Orderbook } from './interfaces/public/orderbook.interface';
 import { SingleTicker } from './interfaces/public/ticker.interface';
 import { Tickers } from './interfaces/public/tickers.interface';
-import { OrderBy, Trade } from './interfaces/public/trades.interface';
-import { Orderbook } from './interfaces/public/orderbook.interface';
 
 export class Public {
   private common: Common;

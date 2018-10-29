@@ -1,5 +1,3 @@
-export type OrderBy = 'asc' | 'desc';
-
 export interface Trade {
   id: number;
   price: string;

@@ -6,10 +6,10 @@ export class ACX {
   private publicClass: Public;
 
   constructor(
-    publicKey?: string,
-    privateKey?: string,
+    accessKey?: string,
+    secret?: string,
   ) {
-    this.privateClass = new Private(publicKey, privateKey);
+    this.privateClass = new Private(accessKey, secret);
     this.publicClass = new Public();
   }
 
