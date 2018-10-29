@@ -7,7 +7,7 @@ import { ACX } from '../../src';
 
 const acx = new ACX(keys.accessKey, keys.secret);
 
-acx.private().deposit('f2354e1641975ed2f2c0e2ce3d6f4929d9ab35d1794e3')
-  .then(deposit => {
-    console.log(deposit);
+acx.private().postOrder('btcaud', 'buy', 0.1, 2.96, 'limit')
+  .then(resp => {
+    console.log(resp);
   });

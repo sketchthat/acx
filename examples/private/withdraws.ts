@@ -7,7 +7,12 @@ import { ACX } from '../../src';
 
 const acx = new ACX(keys.accessKey, keys.secret);
 
-acx.private().deposit('f2354e1641975ed2f2c0e2ce3d6f4929d9ab35d1794e3')
-  .then(deposit => {
-    console.log(deposit);
+acx.private().getWithdraws()
+  .then(withdraws => {
+    console.log(withdraws);
+  });
+
+acx.private().getWithdraws('btc', 5, 'done')
+  .then(withdraws => {
+    console.log(withdraws);
   });
