@@ -78,7 +78,7 @@ export class Public {
       timestamp,
       from,
       to,
-      orderBy,
+      order_by: orderBy,
     };
 
     return this.common.request(false, 'GET', 'trades.json', qs);
