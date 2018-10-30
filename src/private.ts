@@ -12,10 +12,10 @@ export class Private {
   private common: Common;
 
   constructor(
-    publicKey?: string,
-    privateKey?: string,
+    accessKey?: string,
+    secret?: string,
   ) {
-    this.common = new Common(publicKey, privateKey);
+    this.common = new Common(accessKey, secret);
   }
 
   public async deposit(txid: string): Promise<Deposit> {
