@@ -4,8 +4,8 @@ import { assert } from 'chai';
 import { SinonStub, stub } from 'sinon';
 
 import { Common } from './common';
-import { Private } from './private';
 import { Order } from './interfaces/private/orders.interface';
+import { Private } from './private';
 
 describe('Private', () => {
   let privateClass: Private;
