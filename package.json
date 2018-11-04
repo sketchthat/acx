@@ -1,6 +1,6 @@
 {
   "name": "acx-io",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Strongly typed node wrapper for ACX",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",

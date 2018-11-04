@@ -7,6 +7,11 @@ import { ACX } from '../../src';
 
 const acx = new ACX(keys.accessKey, keys.secret);
 
+/**
+ * Get Order
+ *
+ * Id: 441948124
+ */
 acx.private().getOrder(441948124)
   .then(order => {
     console.log(order);

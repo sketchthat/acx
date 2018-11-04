@@ -7,6 +7,11 @@ import { ACX } from '../../src';
 
 const acx = new ACX(keys.accessKey, keys.secret);
 
+/**
+ * Delete Pending Order
+ *
+ * ID: 454948336
+ */
 acx.private().deleteOrder('454948336')
   .then(resp => {
     console.log(resp);
