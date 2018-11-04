@@ -7,6 +7,9 @@ import { ACX } from '../../src';
 
 const acx = new ACX(keys.accessKey, keys.secret);
 
+/**
+ * Get Member Details
+ */
 acx.private().members()
   .then(members => {
     console.log(members);

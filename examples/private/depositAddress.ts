@@ -7,6 +7,11 @@ import { ACX } from '../../src';
 
 const acx = new ACX(keys.accessKey, keys.secret);
 
+/**
+ * Get Deposit Address
+ *
+ * Curreny: BTC
+ */
 acx.private().depositAddress('btc')
   .then(depositAddress => {
     console.log(depositAddress);
