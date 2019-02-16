@@ -1,8 +1,14 @@
 language: nodejs
+node_js:
+  - "8"
 
 before_script:
   - npm install
+  - npm install coveralls --save-dev
 
 script:
   - npm run lint
+  - npm run test
+
+after_script:
   - npm run coverage-ci
